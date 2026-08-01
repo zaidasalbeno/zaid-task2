@@ -22,21 +22,22 @@
             <br>    
 <dev>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name" autofoucus>
 </dev>
 <br>
 <dev> 
     <label for="jo">do you live in jordan</label>
     <label for="yes">Yes</label>
     
-<input type="radio" id="jo" name="do you live in jordan" value="yes">
+<input type="radio" id="jo" checked name="do you live in jordan" value="yes">
 <label for="no">No</label>
 <input type="radio" id="jo" name="do you live in jordan" value="no">
 </dev>  
 <br>
+<hr>
 <dev>
     <h5>if not select from here</h5>
-    <select>
+    <select> multiple> 
 <option value="usa">USA</option>
 <option value="uk">UK</option>  
 <option value="france">France</option>  
@@ -44,12 +45,18 @@
 
 
     </select>
+    <dev>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="18" max="65" step="5" >
+
+
+    </dev>
 </dev>
 <br>
 <dev>
 <label for="skills">Skills:</label>
 <label for="html">HTML</label>
-<input type="checkbox"id="skills" name="skills" value="html">
+<input type="checkbox"id="skills" name="skills"selected value="html">
 <label for="css">CSS</label>
 <input type="checkbox"id="skills" name="skills" value="css">
 <label for="js">JavaScript</label>
@@ -76,10 +83,10 @@
 <h2>contact us</h2>
 <dev>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" placeholder="Enter your email" readonly value="zaid">
     <br>
 <lqbel for="message">Message:</label>
-<input type="text" id="message" name="message">
+<input type="text" id="message" name="message" maxlength="500" min="10" placeholder="Enter your message">
 <br>
 <button type="submit">send</button>
 
